@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service TokenValidation {
+	rpc validate (tokeninput) returns (result);
+}
+
+message tokeninput {
+	string token = 1;
+}
+
+message result {
+	string email = 1;
+}
